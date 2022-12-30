@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Barlow:wght@200;400;500;600&family=Fira+Sans:wght@200;300;400;500&family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D9E3F1;
+    font-family: "Bam Jamjuree", sans-serif;
+    line-height: 1.7;
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.divider{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.border-hover{
+    transition: all 0.4s ease-out;
+    border: 2px solid transparent;
+}
+
+.border-hover:hover{
+    border-color: var(--bs-info);
+}
+
+
+/* NAVBAR */
+.navbar .navbar-brand{
+    font-size: 20px;
+}
+
+.navbar .navbar-nav .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-size: 600;
+
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--bs-info);
+}
+
+.nav-link::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: var(--bs-info);
+    margin: auto;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link.active::after, 
+.nav-link:hover::after{
+    width: 100%;
+}
+
+@media (min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+/* INTRO */
+
+.intro-section p{
+    max-width: 560px;
+}
+
+
+/* services */
+
+.service .icon{
+    width: 80px;
+    height: 80px;
+    font-size: 34px;
+    color: var(--bs-info);
+  box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3), inset -3px -2px 5px rgba(255, 255, 255, 0.8);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* btn */
+
+.btn-icons{
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    align-content: center;
+    padding: 0;
+    font-weight: normal;
+}
